@@ -41,7 +41,7 @@ class Clients extends Component {
             <div className="col-md-6">
               <h5 className="text-right text-secondary">
                 Total Owed
-{' '}
+                {'  '}
                 <span className="text-primary">
                   $
 {parseFloat(totalOwed).toFixed(2)}
@@ -63,13 +63,14 @@ class Clients extends Component {
               {clients.map(client => (
                 <tr key={client.id}>
                   <td>
-                    {client.firstName} 
-{' '}
-{client.lastName}
+                    {client.firstName}
+                    {'  '}
+                    {client.lastName}
                   </td>
                   <td>{client.email}</td>
                   <td>
 $
+{' '}
 {parseFloat(client.balance).toFixed(2)}
 </td>
                   <td>
@@ -79,9 +80,9 @@ $
                     >
                       {' '}
                       <i className="fas fa-arrow-circle-right" />
-{' '}
-Details
-{' '}
+                      {'  '}
+                      Details
+                      {'  '}
                     </Link>
                   </td>
                 </tr>

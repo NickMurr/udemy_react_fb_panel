@@ -38,9 +38,9 @@ class AddClient extends Component {
           <div className="col-md-6">
             <Link to="/" className="btn btn-link">
               <i className="fas fa-arrow-circle-left" />
-{' '}
-Back to dashboard
-</Link>
+              {'  '}
+              Back to dashboard
+            </Link>
           </div>
         </div>
 
