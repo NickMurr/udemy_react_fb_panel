@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/no-unused-prop-types */
 import React, { Component } from 'react';
@@ -22,7 +23,7 @@ class Login extends Component {
         email,
         password
       })
-      .catch(err => alert('Invalid Login Credentials'));
+      .catch(_err => alert('Invalid Login Credentials'));
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
